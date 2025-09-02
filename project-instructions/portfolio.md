@@ -38,7 +38,6 @@ Show off your peacock feathers as you begin to spread your wings and take flight
 - You’ll explore **Cascading Style Sheets (CSS)** in more depth and learn how to link pages with **hyperlinks**.
 - You can optionally explore the basics of **Responsive Design** to make your site look good on all devices.
 
-
 ---
 
 ### **Type of App**
@@ -62,19 +61,20 @@ You’re building a **website** that will be live on the internet through your *
 ### Step-by-Step Work Flow
 
 1. 📂 **Open the `portfolio.html` file** in your codespace to get started.
-   
-2. **Look for TODO sections** in the README:  
+2. **Look for TODO sections** in the README:
+
    - Each **TODO** has instructions for **what you need to do** next.
    - These steps will tell you **where to place new code** inside the existing tags.
 
-3. **Follow the instructions carefully** for each TODO:  
-   - Pay attention to where code should go (inside `<head>` or `<body>`).  
+3. **Follow the instructions carefully** for each TODO:
+
+   - Pay attention to where code should go (inside `<head>` or `<body>`).
    - If a step asks you to **add or remove code**, **only make those changes**—don’t change anything else unless instructed.
 
 4. 🖥️ **Preview your site regularly using Live Server** to see how your changes affect the website.
 
-5. **Build gradually**:  
-   - Each TODO builds on the previous one, so **complete them in order**.  
+5. **Build gradually**:
+   - Each TODO builds on the previous one, so **complete them in order**.
    - Take your time to **double-check your code** before moving on to the next step.
 
 ---
@@ -98,7 +98,8 @@ You’re building a **website** that will be live on the internet through your *
 
 <br>
 
-### ✅ **Check Your Work!**  
+### ✅ **Check Your Work!**
+
 - **After each TODO**, double-check your code to ensure it matches the examples.
 - If you encounter issues, **preview your site** using Live Server to troubleshoot.
 
@@ -132,7 +133,7 @@ There are two ways to open your project with **Live Server**:
 
 #### **Option 2: Go Live Button in the Bottom Panel**
 
-1. **Look at the bottom-right corner** of your codespace.  
+1. **Look at the bottom-right corner** of your codespace.
 2. **Click the “Go Live” button** to launch Live Server.
 
 <div style="text-align: center;">
@@ -158,7 +159,8 @@ There are two ways to open your project with **Live Server**:
 
 <br>
 
-### ✅ **Check Your Work!**  
+### ✅ **Check Your Work!**
+
 - **After launching Live Server**, your browser should open a new tab with your site.
 - By default, Live Server will always load your home page. You can click the link to your Portfolio page to monitor your progress for this project.
 
@@ -194,9 +196,7 @@ There are two ways to open your project with **Live Server**:
 
      <body>
        <!-- All content goes here -->
-       <div id="all-contents">
-         
-       </div>
+       <div id="all-contents"></div>
      </body>
    </html>
    ```
@@ -286,9 +286,7 @@ Your updated `<head>` tag should look like this:
 
      ```html
      <!-- All content goes here -->
-     <div id="all-contents">
-       
-     </div>
+     <div id="all-contents"></div>
      ```
 
 2. **Place the `<nav>` and `<main>` elements inside the `<div id="all-contents">` element**
@@ -297,13 +295,9 @@ Your updated `<head>` tag should look like this:
 
      ```html
      <div id="all-contents">
-       <nav>
+       <nav></nav>
 
-       </nav>
-
-       <main>
-
-       </main>
+       <main></main>
      </div>
      ```
 
@@ -350,9 +344,7 @@ Your updated `<head>` tag should look like this:
    - Look for the following section in your code:
 
      ```html
-     <nav>
-     
-     </nav>
+     <nav></nav>
      ```
 
 2. **Add a title inside the `<nav>` element**
@@ -367,9 +359,7 @@ Your updated `<head>` tag should look like this:
    - **Below the `<h1>` element**, add a `<ul id="nav-ul">` element:
 
      ```html
-     <ul id="nav-ul">
-
-     </ul>
+     <ul id="nav-ul"></ul>
      ```
 
 4. **Add two list items for the menu**
@@ -393,6 +383,7 @@ Your updated `<head>` tag should look like this:
         ```
 
 After completing this TODO, your `<nav>` section should look like this:
+
 ```html
 <nav>
   <h1>Your Name's Amazing Website</h1>
@@ -449,9 +440,7 @@ After completing this TODO, your `<nav>` section should look like this:
    - It should look like this:
 
      ```html
-     <main>
-
-     </main>
+     <main></main>
      ```
 
 2. **Create a new section** to hold the content:
@@ -469,13 +458,12 @@ After completing this TODO, your `<nav>` section should look like this:
    - Add an `id="portfolio"` attribute to the `<ul>` elemnt
 
 After completing these steps, your `<main>` section should look like this:
+
 ```html
 <main>
   <div class="content">
     <h1>Portfolio</h1>
-    <ul id="portfolio">
-
-    </ul>
+    <ul id="portfolio"></ul>
   </div>
 </main>
 ```
@@ -521,13 +509,19 @@ After completing these steps, your `<main>` section should look like this:
 2. **Add these three `<li>` elements** with links to your projects into the `<ul>` element:
    ```html
    <li>
-     <a href="fsd-projects/platformer/">Platformer: A cannon-dodging adventure game for Halleb0t</a>
+     <a href="fsd-projects/platformer/"
+       >Platformer: A cannon-dodging adventure game for Halleb0t</a
+     >
    </li>
    <li>
-     <a href="fsd-projects/bouncing-box/">Bouncing Box: A fun introduction to web game development</a>
+     <a href="fsd-projects/bouncing-box/"
+       >Bouncing Box: A fun introduction to web game development</a
+     >
    </li>
    <li>
-     <a href="fsd-projects/circularity/">Circularity: A poetic motion experiment with circles</a>
+     <a href="fsd-projects/circularity/"
+       >Circularity: A poetic motion experiment with circles</a
+     >
    </li>
    ```
 
@@ -581,6 +575,7 @@ After completing these steps, your `<main>` section should look like this:
    - Note that the link tag does not require a closing tag
 
 3. **Add a `rel="stylesheet"` attribute and `href="style.css"` attribute** inside the `<link>` tag
+
    - Your code should now look like this:
      ```html
      <head>
@@ -590,6 +585,7 @@ After completing these steps, your `<main>` section should look like this:
      ```
 
 4. **Open the `style.css` file** and add the following styles to the bottom of the file:
+
    ```css
    /* Portfolio styles */
    .content h1 {
@@ -718,6 +714,7 @@ Here's some CSS to get you started on making your website mobile responsive. You
 ### ✅ **Check Your Work!**
 
 **If you made any changes** in the "Extra Challenges" section:
+
 - **Preview your site** using **Live Server** to ensure the new styles are applied.
 
 <br>

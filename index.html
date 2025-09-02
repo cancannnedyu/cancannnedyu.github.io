@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>CHANGE ME</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Amazing Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <body
+    class="bg-gradient-to-br from-blue-100 via-blue-200 to-blue-400 min-h-screen font-sans"
+  >
+    <!-- Navbar -->
+    <header class="bg-red-600 text-white shadow-md">
+      <div
+        class="container mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <h1 class="text-2xl font-bold">My Amazing Website</h1>
+        <nav>
+          <ul class="flex space-x-6 text-lg font-medium">
+            <li><a href="index.html" class"hover:text-gray-200">home</a></li>
+            <li><a href="portfolio.html" class"hover:text-gray-200">portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <body>
-    <!-- All content goes here -->
-    <div id="all-contents">
-      
-    </div>
+    <!-- Main content -->
+    <main class="container mx-auto px-6 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Sidebar -->
+        <aside class="md:col-span-1 bg-white rounded-xl shadow-md p-4">
+          <div class="sidebar">
+            <img
+              class="sidebar-img"
+              src="https://tse4.mm.bing.net/th/id/OIP.-juXmc5Mu01uU_hGXBqB_AHaHa?pid=Api&P=0&h=220"
+            />
+          </div>
+        </aside>
+
+        <!-- Content -->
+        <section class="md:col-span-2 bg-white rounded-xl shadow-md p-6">
+          <h2 class="text-2xl font-semibold mb-2">Zhiyuchen</h2>
+          <p class="text-gray-700">Hello! Welcome to my personal website.</p>
+        </section>
+
+        <!-- Interests -->
+        <aside class="md:col-span-1 bg-white rounded-xl shadow-md p-6">
+          <h3 class="text-xl font-semibold mb-3">Interests</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Play games</li>
+            <li>Sleep</li>
+            <li>Walk</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 text-center py-4 mt-10">
+      <p>© 2025 Zhiyuchen. All rights reserved.</p>
+    </footer>
   </body>
 </html>
